@@ -1,0 +1,33 @@
+test_changed_file_invalidates_confirmation (test_action_gate.GateTests.test_changed_file_invalidates_confirmation) ... ok
+test_confirmation_cannot_be_replayed (test_action_gate.GateTests.test_confirmation_cannot_be_replayed) ... ok
+test_confirmation_is_action_specific (test_action_gate.GateTests.test_confirmation_is_action_specific) ... ok
+test_duplicate_and_hidden_buttons (test_action_gate.GateTests.test_duplicate_and_hidden_buttons) ... ok
+test_matching_confirmation_consumed (test_action_gate.GateTests.test_matching_confirmation_consumed) ... ok
+test_navigation_needs_no_extra_confirmation (test_action_gate.GateTests.test_navigation_needs_no_extra_confirmation) ... ok
+test_no_identical_third_retry (test_action_gate.GateTests.test_no_identical_third_retry) ... ok
+test_other_tab_invalidates_target (test_action_gate.GateTests.test_other_tab_invalidates_target) ... ok
+test_pause_overrides_authorization (test_action_gate.GateTests.test_pause_overrides_authorization) ... ok
+test_payment_remains_with_user (test_action_gate.GateTests.test_payment_remains_with_user) ... ok
+test_refresh_invalidates_target (test_action_gate.GateTests.test_refresh_invalidates_target) ... ok
+test_timeout_never_retries_submit (test_action_gate.GateTests.test_timeout_never_retries_submit) ... ok
+test_unknown_effect_is_not_local (test_action_gate.GateTests.test_unknown_effect_is_not_local) ... ok
+test_upload_requires_confirmation_even_if_mislabelled_read (test_action_gate.GateTests.test_upload_requires_confirmation_even_if_mislabelled_read) ... ok
+test_content_changes_and_extra_code_are_rejected (test_model_lock.LockTests.test_content_changes_and_extra_code_are_rejected) ... ok
+test_linux_scripts_do_not_contain_crlf (test_model_lock.LockTests.test_linux_scripts_do_not_contain_crlf) ... ok
+test_http_error_does_not_echo_body_or_key (test_platform_client.ClientTests.test_http_error_does_not_echo_body_or_key) ... ok
+test_no_cloud_images (test_platform_client.ClientTests.test_no_cloud_images) ... ok
+test_observation_schema_cannot_return_actions (test_platform_client.ClientTests.test_observation_schema_cannot_return_actions) ... ok
+test_only_image_formats (test_platform_client.ClientTests.test_only_image_formats) ... ok
+test_redirect_refused (test_platform_client.ClientTests.test_redirect_refused) ... ok
+test_refuse_incomplete_output (test_platform_client.ClientTests.test_refuse_incomplete_output) ... ok
+test_restrict_spark_to_tunnel (test_platform_client.ClientTests.test_restrict_spark_to_tunnel) ... ok
+test_spark_defaults_to_facts_only (test_platform_client.ClientTests.test_spark_defaults_to_facts_only) ... ok
+test_step_plan_path (test_platform_client.ClientTests.test_step_plan_path) ... ok
+test_unknown_provider_refused (test_platform_client.ClientTests.test_unknown_provider_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.400s
+
+OK
+
+Skill is valid!

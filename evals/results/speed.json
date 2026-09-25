@@ -1,0 +1,92 @@
+[
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 13.525,
+    "content": "\n页面标题为“办件进度查询”；当前页面是办理进度查询的输入表单，未显示该用户的办理结果。",
+    "usage": {
+      "prompt_tokens": 1013,
+      "total_tokens": 1181,
+      "completion_tokens": 168,
+      "prompt_tokens_details": null
+    },
+    "repeat": 1,
+    "variant": "full",
+    "image_bytes": 88668
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 12.844,
+    "content": "\n页面标题为“办件进度查询”；当前页面未显示该用户的办理结果，仅呈现需输入信息的查询入口。",
+    "usage": {
+      "prompt_tokens": 597,
+      "total_tokens": 768,
+      "completion_tokens": 171,
+      "prompt_tokens_details": null
+    },
+    "repeat": 1,
+    "variant": "region",
+    "image_bytes": 40692
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 11.763,
+    "content": "\n页面标题为“办件进度查询”；当前页面未显示该用户的办理结果，仅呈现需输入信息的查询表单。",
+    "usage": {
+      "prompt_tokens": 597,
+      "total_tokens": 767,
+      "completion_tokens": 170,
+      "prompt_tokens_details": null
+    },
+    "repeat": 2,
+    "variant": "region",
+    "image_bytes": 40692
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 11.594,
+    "content": "\n页面标题为“办件进度查询”；当前页面是办理进度查询的表单入口，未显示该用户的办理结果。",
+    "usage": {
+      "prompt_tokens": 1013,
+      "total_tokens": 1180,
+      "completion_tokens": 167,
+      "prompt_tokens_details": null
+    },
+    "repeat": 2,
+    "variant": "full",
+    "image_bytes": 88668
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 11.595,
+    "content": "\n页面标题为“办件进度查询”；当前页面是办理进度查询的表单入口，未显示该用户的办理结果。",
+    "usage": {
+      "prompt_tokens": 1013,
+      "total_tokens": 1180,
+      "completion_tokens": 167,
+      "prompt_tokens_details": null
+    },
+    "repeat": 3,
+    "variant": "full",
+    "image_bytes": 88668
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 11.759,
+    "content": "\n页面标题为“办件进度查询”；当前页面未显示该用户的办理结果，仅呈现需输入信息的查询表单。",
+    "usage": {
+      "prompt_tokens": 597,
+      "total_tokens": 767,
+      "completion_tokens": 170,
+      "prompt_tokens_details": null
+    },
+    "repeat": 3,
+    "variant": "region",
+    "image_bytes": 40692
+  }
+]

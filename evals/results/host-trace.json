@@ -1,0 +1,25 @@
+{
+ "date":"2026-09-25",
+ "record_type":"根据本次宿主工具回执整理；不是自动导出的浏览器完整日志",
+ "host":"Codex + Tabbit CLI (browser-owned Playwright 1.62.1)",
+ "skill_loading":"宿主在当前任务中显式读取了交付的SKILL.md及操作边界；没有安装到全局技能目录，没有验证自动发现",
+ "task":"模拟用户目标：已提交申请，只需找到公开办件进度查询入口",
+ "sensitive_data":"未登录、未输入姓名/流水号/验证码，未提交查询或申请。截图为空白公共表单。",
+ "steps":[
+  {"request":"browser_start","action":"访问广东省政府门户并核对政务服务链接","url":"https://www.gd.gov.cn/","observed_link":"https://www.gdzwfw.gov.cn/"},
+  {"request":"browser_service","action":"点击真实政务服务链接","result":"新页面打开广东政务服务网"},
+  {"request":"show-query","action":"关闭升级提示后悬停查询","result":"失败；新手引导遮挡，未强制点击"},
+  {"request":"inspect-overlay","action":"重新读取结构及截图","result":"发现知道了按钮","screenshot_sha256":"d7861a68a5e8e227230b9c66e7b57aed94a614a353df3cd41c81b9e51591203a"},
+  {"request":"show-query-after-tip","action":"点知道了，再悬停查询","result":"出现查办件链接"},
+  {"request":"open-progress-query","action":"点击查办件","result":"工具先观察到旧页渲染，尚不能宣称已到达"},
+  {"request":"verify-progress-page","action":"检查任务拥有的页面列表、目标标题和截图","result":"确认新页为办件进度查询","url":"https://www.gdzwfw.gov.cn/portal/v2/progress-query","screenshot_sha256":"542fddf6b06d8885c40fca09d2fd20c754ea635733a3ee5153b84917393575cc"},
+  {"request":"capture-query-region","action":"读取最新页面并截取当前问题所需区域","result":"公开空白表单，尚无个人办理结果","screenshot_sha256":"f6c18bc3479790dfafaefa0d7adb5a491e9057ba259edb0dade378fccc11191a"},
+  {"request":"benchmark.py","action":"经授权SSH隧道/节点本地端口，将公共截图交给Spark视觉服务；完整图和区域图各3次","result":"6次均识别办件进度查询，均指出没有该用户的办理结果","evidence":"speed.json"}
+ ],
+ "host_final_interpretation":"已经找到并打开办件进度查询页；这里只完成找入口。页面仍需用户自行填写查询条件与验证码，未查询出实际申请记录。",
+ "later_recovery_failure":{
+  "detail":"追加读取耗时测量时，工具返回新的任务ID和about:blank。库存仍列出原查询标签；resume因会话已有另一组失败；claim成功但运行时pages与context.pages仍只有空白页。停止追加操作并finish释放当前任务。原因未确定，保留为宿主绑定限制。",
+  "measurement":"没有有效的结构读取耗时，因此不报告浏览器快路径端到端加速百分比。"
+ },
+ "scope_limit":"不是真实申请办理完成，不是中老年用户可用性研究，也不是覆盖多个网站的稳定性证明。"
+}

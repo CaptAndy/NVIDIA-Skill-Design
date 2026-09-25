@@ -1,0 +1,4 @@
+interface:
+  display_name: "网上办事帮手"
+  short_description: "结合真实网页帮助完成网上办事，查找入口、理解表单、处理材料与核对进度"
+  default_prompt: "用 $screen-assistance 帮我处理当前网页上卡住的办事步骤。"

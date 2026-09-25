@@ -1,0 +1,41 @@
+[
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 68.468,
+    "content": "\n图片显示申请状态为“已受理，待审核”，并标注“此状态不代表申请已通过”，因此未办好。",
+    "usage": {
+      "prompt_tokens": 615,
+      "total_tokens": 899,
+      "completion_tokens": 284,
+      "prompt_tokens_details": null
+    },
+    "case": "pending"
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 29.868,
+    "content": "\n可见证据：页面显示“材料上传失败”，说明“仅支持 PDF 文件，大小不超过 5 MB”；当前选择的文件是“练习照片.jpg”；页面提供“重新选择文件”操作入口。  \n原因：当前上传的文件格式为 JPG，不满足仅支持 PDF 文件的要求（且需同时满足大小≤5MB，当前文件可能也存在格式外的大小问题，但核心是格式不符）。  \n下一步：点击“重新选择文件”，选择格式为 PDF、大小不超过 5 MB 的文件再次尝试上传。",
+    "usage": {
+      "prompt_tokens": 617,
+      "total_tokens": 1032,
+      "completion_tokens": 415,
+      "prompt_tokens_details": null
+    },
+    "case": "upload-error"
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 11.962,
+    "content": "\n图片中“个人服务”下有“首次申请”和“进度查询”选项，且下方文字提示“如果已经提交申请，请选择进度查询”，因此应选择“进度查询”入口。",
+    "usage": {
+      "prompt_tokens": 624,
+      "total_tokens": 777,
+      "completion_tokens": 153,
+      "prompt_tokens_details": null
+    },
+    "case": "entry"
+  }
+]

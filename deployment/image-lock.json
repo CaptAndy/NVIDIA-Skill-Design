@@ -1,0 +1,15 @@
+{
+  "tag": "v0.22.1",
+  "index_digest": "sha256:953d3a06d5e64ab582985cd7401289d3abf2a2c14ef2158e9a84313daeec77d7",
+  "manifests": [
+    {
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux"
+      },
+      "digest": "sha256:09532aaa219c2cb459dba6690d4aef3feafefff6299460fb3f0097ff5ddaf4d1",
+      "computed_digest": "sha256:09532aaa219c2cb459dba6690d4aef3feafefff6299460fb3f0097ff5ddaf4d1",
+      "config": "sha256:9b2b3cb4d201e48efac830e8b1fd4d5f057be394def6f11cce50f3691d2f8e6a"
+    }
+  ]
+}

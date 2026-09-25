@@ -1,0 +1,15 @@
+[
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 38.893,
+    "content": "\n可见证据：页面显示“材料上传失败”；提示“仅支持 PDF 文件，大小不超过 5 MB”；当前选择的文件是“练习照片.jpg”；存在“重新选择文件”操作入口。  \n原因：当前上传的文件格式为 JPG，不满足系统仅支持 PDF 文件的要求（文件格式不匹配是可见失败原因）；当前文件大小是否超过 5 MB 无明确显示，属未知。  \n下一步：点击“重新选择文件”，选择格式为 PDF 且大小不超过 5 MB 的文件再次尝试上传。",
+    "usage": {
+      "prompt_tokens": 656,
+      "total_tokens": 1215,
+      "completion_tokens": 559,
+      "prompt_tokens_details": null
+    },
+    "case": "upload-error"
+  }
+]

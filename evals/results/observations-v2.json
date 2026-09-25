@@ -1,0 +1,45 @@
+[
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 19.436,
+    "content": "{\n    \"page_title\": \"办件进度查询\",\n    \"status_text\": null,\n    \"error_text\": null,\n    \"unknowns\": []\n}",
+    "usage": {
+      "prompt_tokens": 618,
+      "total_tokens": 899,
+      "completion_tokens": 281,
+      "prompt_tokens_details": null
+    },
+    "observations": {
+      "page_title": "办件进度查询",
+      "status_text": null,
+      "error_text": null,
+      "unknowns": []
+    },
+    "case": "public-progress-region"
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 12.806,
+    "content": "{\n    \"page_title\": \"网上办事·虚构测试页面\",\n    \"status_text\": \"已受理，待审核\",\n    \"error_text\": null,\n    \"unknowns\": []\n}",
+    "usage": {
+      "prompt_tokens": 695,
+      "total_tokens": 879,
+      "completion_tokens": 184,
+      "prompt_tokens_details": null
+    },
+    "observations": {
+      "page_title": "网上办事·虚构测试页面",
+      "status_text": "已受理，待审核",
+      "error_text": null,
+      "unknowns": []
+    },
+    "case": "pending"
+  },
+  {
+    "ok": false,
+    "error": "Incomplete or empty model response; no action should follow.",
+    "case": "upload-error"
+  }
+]

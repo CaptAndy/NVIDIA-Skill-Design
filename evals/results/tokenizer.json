@@ -1,0 +1,7 @@
+{
+  "model_type": "step_robotics",
+  "samples": 1008,
+  "original_vs_false_differences": 0,
+  "original_vs_true_differences": 131,
+  "source_tokenizer_sha256": "439885437ceee7205faa72b808b543bb3fcd2f3df788a959aa3604d07a8f5c75"
+}

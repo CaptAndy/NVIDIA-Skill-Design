@@ -1,0 +1,66 @@
+[
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 102.47,
+    "content": "{\n    \"page_title\": \"办件进度查询\",\n    \"status_text\": null,\n    \"error_text\": null,\n    \"unknowns\": [\"当前页面为办件进度查询入口，未展示任何已查询的申请进度结果，需输入申办人名称或申办流水号才能查询进度\"]\n}",
+    "usage": {
+      "prompt_tokens": 585,
+      "total_tokens": 1371,
+      "completion_tokens": 786,
+      "prompt_tokens_details": null
+    },
+    "observations": {
+      "page_title": "办件进度查询",
+      "status_text": null,
+      "error_text": null,
+      "unknowns": [
+        "当前页面为办件进度查询入口，未展示任何已查询的申请进度结果，需输入申办人名称或申办流水号才能查询进度"
+      ]
+    },
+    "case": "public-progress-region"
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 37.091,
+    "content": "{\n    \"page_title\": \"网上办事·虚构测试页面\",\n    \"status_text\": \"已受理，待审核\",\n    \"error_text\": null,\n    \"unknowns\": [\"申请是否已办结（当前页面显示状态为待审核，未呈现已办结信息）\"]\n}",
+    "usage": {
+      "prompt_tokens": 662,
+      "total_tokens": 1182,
+      "completion_tokens": 520,
+      "prompt_tokens_details": null
+    },
+    "observations": {
+      "page_title": "网上办事·虚构测试页面",
+      "status_text": "已受理，待审核",
+      "error_text": null,
+      "unknowns": [
+        "申请是否已办结（当前页面显示状态为待审核，未呈现已办结信息）"
+      ]
+    },
+    "case": "pending"
+  },
+  {
+    "ok": true,
+    "model": "screen-assistance-vlm",
+    "elapsed_seconds": 106.806,
+    "content": "{\n    \"page_title\": \"网上办事·虚构测试页面\",\n    \"status_text\": \"材料上传失败\",\n    \"error_text\": \"仅支持 PDF 文件，大小不超过 5 MB。\",\n    \"unknowns\": [\n        \"当前文件“练习照片.jpg”的文件大小未在页面显示\",\n        \"无法确认“练习照片.jpg”是否满足大小不超过5 MB的要求（因页面未显示该文件大小）\"\n    ]\n}",
+    "usage": {
+      "prompt_tokens": 667,
+      "total_tokens": 2190,
+      "completion_tokens": 1523,
+      "prompt_tokens_details": null
+    },
+    "observations": {
+      "page_title": "网上办事·虚构测试页面",
+      "status_text": "材料上传失败",
+      "error_text": "仅支持 PDF 文件，大小不超过 5 MB。",
+      "unknowns": [
+        "当前文件“练习照片.jpg”的文件大小未在页面显示",
+        "无法确认“练习照片.jpg”是否满足大小不超过5 MB的要求（因页面未显示该文件大小）"
+      ]
+    },
+    "case": "upload-error"
+  }
+]

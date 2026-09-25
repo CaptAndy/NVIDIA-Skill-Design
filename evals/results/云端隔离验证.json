@@ -1,0 +1,53 @@
+{
+  "health": 200,
+  "image": "sha256:9b2b3cb4d201e48efac830e8b1fd4d5f057be394def6f11cce50f3691d2f8e6a",
+  "running": true,
+  "user": "1001:1001",
+  "read_only_root": true,
+  "cap_drop": [
+    "ALL"
+  ],
+  "security_opt": [
+    "no-new-privileges"
+  ],
+  "port_bindings": {
+    "8000/tcp": [
+      {
+        "HostIp": "127.0.0.1",
+        "HostPort": "18000"
+      }
+    ]
+  },
+  "networks": {
+    "screen-assistance-isolated-v3": {
+      "internal": true,
+      "members": 1
+    }
+  },
+  "mounts": [
+    {
+      "destination": "/model",
+      "rw": false
+    },
+    {
+      "destination": "/model/tokenizer_config.json",
+      "rw": false
+    },
+    {
+      "destination": "/cache",
+      "rw": true
+    }
+  ],
+  "runtime": {
+    "uid": 1001,
+    "proc_security": {
+      "CapEff": "0000000000000000",
+      "NoNewPrivs": "1"
+    },
+    "external_tcp_blocked": true,
+    "external_error": "OSError",
+    "default_route_absent": true
+  },
+  "relay_fixed_target_verified": true,
+  "passed": true
+}

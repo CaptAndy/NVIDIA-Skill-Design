@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "model": "screen-assistance-vlm",
+  "elapsed_seconds": 58.953,
+  "content": "{\n    \"page_title\": \"网上办事·虚构测试页面\",\n    \"status_text\": \"已受理，待审核\",\n    \"error_text\": null\n    , \"unknowns\": []\n}",
+  "usage": {
+    "prompt_tokens": 699,
+    "total_tokens": 851,
+    "completion_tokens": 152,
+    "prompt_tokens_details": null
+  },
+  "observations": {
+    "page_title": "网上办事·虚构测试页面",
+    "status_text": "已受理，待审核",
+    "error_text": null,
+    "unknowns": []
+  }
+}

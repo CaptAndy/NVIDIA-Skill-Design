@@ -1,0 +1,37 @@
+{
+  "healthy": true,
+  "wait_seconds": 60.05,
+  "image": "sha256:9b2b3cb4d201e48efac830e8b1fd4d5f057be394def6f11cce50f3691d2f8e6a",
+  "container_started_at": "2026-09-25T11:56:02.559308149Z",
+  "port_bindings": {
+    "8000/tcp": [
+      {
+        "HostIp": "127.0.0.1",
+        "HostPort": "18000"
+      }
+    ]
+  },
+  "config_label": "83311c7315ea88e4d6fb9db0a49bc25565791b15e17085b54031ce3894060f98",
+  "incorrect_regex_warning_present": false,
+  "warning_lines": [
+    "(APIServer pid=1) WARNING 09-25 11:56:10 [envs.py:2057] Unknown vLLM environment variable detected: VLLM_BUILD_PIPELINE",
+    "(APIServer pid=1) WARNING 09-25 11:56:10 [envs.py:2057] Unknown vLLM environment variable detected: VLLM_BUILD_URL",
+    "(APIServer pid=1) WARNING 09-25 11:56:10 [envs.py:2057] Unknown vLLM environment variable detected: VLLM_IMAGE_TAG",
+    "(APIServer pid=1) WARNING 09-25 11:56:10 [vllm.py:1033] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none",
+    "(APIServer pid=1) WARNING 09-25 11:56:10 [vllm.py:1058] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.",
+    "(EngineCore pid=79) WARNING 09-25 11:56:20 [vllm.py:1033] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none",
+    "(EngineCore pid=79) WARNING 09-25 11:56:20 [vllm.py:1058] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.",
+    "(EngineCore pid=79) WARNING 09-25 11:56:20 [vllm.py:509] Model runner v2 does not yet support reasoning budget enforcement; using the v1 model runner instead.",
+    "(EngineCore pid=79) WARNING 09-25 11:58:35 [func_utils.py:175] The following intended overrides are not keyword args and will be dropped: {'truncation'}",
+    "(EngineCore pid=79) WARNING 09-25 11:58:48 [vllm.py:1033] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none",
+    "(EngineCore pid=79) WARNING 09-25 11:58:48 [vllm.py:1058] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.",
+    "(APIServer pid=1) WARNING 09-25 11:58:49 [model.py:1509] Default vLLM sampling parameters have been overridden by the model's `generation_config.json`: `{'temperature': 1.0, 'top_k': 0, 'top_p': 1.0}`. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.",
+    "(APIServer pid=1) WARNING 09-25 11:58:49 [func_utils.py:175] The following intended overrides are not keyword args and will be dropped: {'truncation'}",
+    "(APIServer pid=1) WARNING 09-25 11:58:49 [func_utils.py:175] The following intended overrides are not keyword args and will be dropped: {'truncation'}",
+    "(APIServer pid=1) [transformers] The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details."
+  ],
+  "model_ids": [
+    "screen-assistance-vlm"
+  ],
+  "passed": true
+}

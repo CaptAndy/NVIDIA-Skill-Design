@@ -1,0 +1,4 @@
+{
+  "ssh_direct_tcpip_health": "HTTP/1.1 200 OK",
+  "passed": true
+}
